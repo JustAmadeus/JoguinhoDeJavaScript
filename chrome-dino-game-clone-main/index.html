@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <!--Conteúdo vai ser responsivo. Geral, o conteúdo inteiro da página. Aqui, configuramos em 1 na escala.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <!--Abaixo, um script. JavaScript. Adivinha? É ele quem faz todos os elementos terem alguma interativiade ou animação at all. -->
+  <script src="script.js" type="module"></script>
+</head>
+<body>
+  <!--Mais para frente, em styles.css e script.js, é possível entender que criar este "mundo" é como ter criado um escopo com tudo que
+    vai mudar de tamanho de acordo com a tela. Além disso, tudo que está neste escopo, vai atualizar sempre que puder, como
+    será explicado tambem mais a frente.-->
+  <div class="world" data-world>
+    <div class="score" data-score>0</div> <!--pontuação.-->
+    <div class="start-screen" data-start-screen>Press Any Key To Start</div> <!--Aviso de entrada para iniciar.-->
+    <img src="imgs/ground.png" class="ground" data-ground> <!--Temos duas tags de imagem para o chão.-->
+    <img src="imgs/ground.png" class="ground" data-ground>
+    <!--Basicamente, estas duas imagens serão colocadas de uma forma que o fim de uma encaixo no início de outra:
+    Enquanto o dinossaurinho se move por um segmento, o outro é carregado a frente. Como uma esteira. Em loop.-->
+    <img src="imgs/dino-stationary.png" class="dino" data-dino> <!--Quem é este? É "desnecessauro" explicar, eu imagino.-->
+    <!--Aqui, é possível reparar já que estas tags além de serem de uma classe de objeto na tela, tambem tem dados associados a eles.
+      é o que vai permitir que algum code dê vida ao 'dinossáurius' e ao cenário.-->
+
+    <!--Perceba a ausência dos cactus (o plural é "cactus" mesmo, ou "cactuses"?)-->
+  </div>
+</body>
+</html>
